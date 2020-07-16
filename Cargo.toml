@@ -16,4 +16,5 @@ include = ["src/**/*", "LICENSE", "Cargo.toml"]
 
 [dependencies]
 r2d2 = "0.8"
-redis = "0.15"
+redis = { git = "https://github.com/mitsuhiko/redis-rs.git", rev = "010a433", features = ["default", "tokio-tls-comp", "async-std-tls-comp", "tls"] }
+
